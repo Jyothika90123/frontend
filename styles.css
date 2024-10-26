@@ -1,0 +1,131 @@
+/* Make the body cover the entire viewport and set a background image */
+/* Full-screen splash screen */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/background.jpg'); /* Change the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.splash-screen {
+    text-align: center;
+    color: white;
+    animation: fadeOut 2s ease-in-out 5s forwards; /* Fades out after 5 seconds */
+}
+
+.company-logo {
+    width: 450px; /* Adjust size as needed */
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.pin-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 100px; /* Minimum width for display */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.digit-button, #clear-button, #login-button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.digit-button:hover, #clear-button:hover, #login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.message {
+    margin-top: 20px;
+    color: red; /* For error messages */
+}
+.test-tube-container {
+    text-align: center;
+}
+
+.test-tube-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+    margin: 20px 0;
+}
+
+
+
+.test-tube {
+    width: 40px;
+    height: 180px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius:0px 0px 20px 20px; /* Rounded bottom */
+}
+
+
+.text{
+    color:white;
+}
+button {
+    padding: 15px 30px; /* Increase padding for a bigger button */
+    font-size: 18px; /* Increase font size */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Fully rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add some space above the button */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
